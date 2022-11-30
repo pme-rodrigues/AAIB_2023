@@ -4,9 +4,9 @@ def run():
         if message == 'y':
             print('ok :)')
         else:
-            raise ValueError()
-    except ValueError():
-        print(':(')
+            raise ValueError(message)
+    except ValueError as err:
+        print(message)
 
 if __name__ == '__main__':
     run()
